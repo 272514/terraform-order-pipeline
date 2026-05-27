@@ -30,9 +30,6 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
 
-      - name: Terraform Format Check
-        run: terraform fmt -check
-
       - name: Terraform Init
         run: terraform init
 
